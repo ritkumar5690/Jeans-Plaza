@@ -4,10 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -33,10 +31,10 @@
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
   },
-  "homepage": "https://ritkumar5690.github.io/Jeans-Plaza",
-   "scripts": {
-   "build": "vite build",
-   "deploy": "gh-pages -d dist"
+  
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "deploy": "gh-pages -d dist"
 }
-
-}
+  }
