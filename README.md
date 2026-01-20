@@ -1,17 +1,69 @@
-# React + TypeScript + Vite
+# Jeans Plaza - E-commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React e-commerce website for Jeans Plaza, built with React 19, TypeScript, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Website:** https://ritkumar5690.github.io/Jeans-Plaza/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Modern React 19 with TypeScript
+- Lightning-fast Vite build tool
+- Responsive Tailwind CSS styling
+- Client-side routing with React Router
+- Lazy-loaded pages for better performance
+- GitHub Pages deployment automation
+- ESLint and code quality tools
 
-## Expanding the ESLint configuration
+## 📦 Pages
+
+- **Home** - Landing page with featured products
+- **About** - About Jeans Plaza
+- **Products** - Product catalog
+- **Contact** - Contact information
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 19, TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Routing:** React Router v7
+- **Deployment:** GitHub Pages with GitHub Actions
+
+## 📝 Setup Instructions
+
+### Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## 🚀 Deployment
+
+This project uses **GitHub Actions** for automatic deployment:
+
+1. Push changes to `main` branch
+2. GitHub Actions automatically builds the project
+3. Site deploys to GitHub Pages at: https://ritkumar5690.github.io/Jeans-Plaza/
+
+### Manual Deployment
+
+```bash
+npm run deploy
+```
+
+## 🔧 Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
