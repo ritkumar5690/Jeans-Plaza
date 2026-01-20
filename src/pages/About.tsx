@@ -1,4 +1,8 @@
 import { useEffect } from 'react';
+import aboutImg from '../assets/images/about-left-image.jpg';
+import team01 from '../assets/images/team-member-01.jpg';
+import team02 from '../assets/images/team-member-02.jpg';
+import team03 from '../assets/images/team-member-03.jpg';
 
 const About = () => {
   // Component-level JS init
@@ -41,7 +45,7 @@ const About = () => {
         <div className="container">
           <div className="section-content">
             <div className="left-image">
-              <img src="/assets/images/about-left-image.jpg" alt="" />
+              <img src={aboutImg} alt="" />
             </div>
             <div className="right-content">
               <h4>About Us &amp; Our Skills</h4>
@@ -81,7 +85,7 @@ const About = () => {
                     </ul>
                   </div>
                 </div>
-                <img src="/assets/images/team-member-01.jpg" alt="" />
+                <img src={team01} alt="" />
               </div>
               <div className="down-content">
                 <h4>Ragnar Lodbrok</h4>
@@ -100,7 +104,7 @@ const About = () => {
                     </ul>
                   </div>
                 </div>
-                <img src="/assets/images/team-member-02.jpg" alt="" />
+                <img src={team02} alt="" />
               </div>
               <div className="down-content">
                 <h4>Ragnar Lodbrok</h4>
@@ -119,7 +123,7 @@ const About = () => {
                     </ul>
                   </div>
                 </div>
-                <img src="/assets/images/team-member-03.jpg" alt="" />
+                <img src={team03} alt="" />
               </div>
               <div className="down-content">
                 <h4>Ragnar Lodbrok</h4>
@@ -134,3 +138,4 @@ const About = () => {
 };
 
 export default About;
+

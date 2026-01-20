@@ -1,5 +1,29 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import leftBannerImg from '../assets/images/left-banner-image.png';
+import banerImg01 from '../assets/images/baner-right-image-01.png';
+import banerImg02 from '../assets/images/baner-right-image-02.png';
+import banerImg03 from '../assets/images/baner-right-image-03.png';
+import menimg1 from '../assets/images/menimg1.png';
+import menimg2 from '../assets/images/menimg2.png';
+import menimg3 from '../assets/images/menimg3.webp';
+import menimg4 from '../assets/images/menimg4.png';
+import woimg1 from '../assets/images/woimg1.png';
+import woimg2 from '../assets/images/woimg2.png';
+import woimg3 from '../assets/images/woimg3.png';
+import woimg4 from '../assets/images/woimg4.png';
+import kidimg1 from '../assets/images/kid-01.png';
+import kidimg2 from '../assets/images/kid-02.png';
+import kidimg3 from '../assets/images/kid-03.png';
+import kidimg4 from '../assets/images/kid-04.jpg';
+import sproduct1 from '../assets/images/sproduct1.jpg';
+import sproduct2 from '../assets/images/sproduct2.jpg';
+import instagram01 from '../assets/images/instagram-01.jpg';
+import instagram02 from '../assets/images/instagram-02.jpg';
+import instagram03 from '../assets/images/instagram-03.jpg';
+import instagram04 from '../assets/images/instagram-04.jpg';
+import instagram05 from '../assets/images/instagram-05.jpg';
+import instagram06 from '../assets/images/instagram-06.jpg';
 
 const Home = () => {
   // Component-level JS init
@@ -43,7 +67,7 @@ const Home = () => {
                     <a href="#men">Purchase Now!</a>
                   </div>
                 </div>
-                <img src="/assets/images/left-banner-image.png" alt="" />
+                <img src={leftBannerImg} alt="" />
               </div>
             </div>
             <div className="right-content">
@@ -63,7 +87,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <img src="/assets/images/baner-right-image-01.png" alt="" />
+                    <img src={banerImg01} alt="" />
                   </div>
                 </div>
                 <div className="right-first-image">
@@ -81,7 +105,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <img src="/assets/images/baner-right-image-02.png" alt="" />
+                    <img src={banerImg02} alt="" />
                   </div>
                 </div>
                 <div className="right-first-image">
@@ -99,7 +123,7 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <img src="/assets/images/baner-right-image-03.png" alt="" />
+                    <img src={banerImg03} alt="" />
                   </div>
                 </div>
               </div>
@@ -129,7 +153,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/menimg1.png" alt="Statement Bottoms" />
+                <img src={menimg1} alt="Statement Bottoms" />
               </div>
             </div>
             <div className="right-first-image">
@@ -147,7 +171,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/menimg2.png" alt="Smart Formals" />
+                <img src={menimg2} alt="Smart Formals" />
               </div>
             </div>
             <div className="right-first-image">
@@ -165,7 +189,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/menimg3.webp" alt="Lean Fits" />
+                <img src={menimg3} alt="Lean Fits" />
               </div>
             </div>
             <div className="right-first-image">
@@ -183,7 +207,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/menimg4.png" alt="Off-Duty Polos" />
+                <img src={menimg4} alt="Off-Duty Polos" />
               </div>
             </div>  
           </div>
@@ -211,7 +235,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/woimg1.png" alt="New Green Jacket" />
+                <img src={woimg1} alt="New Green Jacket" />
               </div>
             </div>
             <div className="right-first-image">
@@ -229,7 +253,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/woimg2.png" alt="Classic Dress" />
+                <img src={woimg2} alt="Classic Dress" />
               </div>
             </div>
             <div className="right-first-image">
@@ -247,7 +271,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/woimg3.png" alt="Spring Collection" />
+                <img src={woimg3} alt="Spring Collection" />
               </div>
             </div>
             <div className="right-first-image">
@@ -265,7 +289,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/woimg4.png" alt="Classic Spring" />
+                <img src={woimg4} alt="Classic Spring" />
               </div>
             </div>
           </div>
@@ -293,7 +317,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/kid-01.png" alt="New Green Jacket" />
+                <img src={kidimg1} alt="New Green Jacket" />
               </div>
             </div>
             <div className="right-first-image">
@@ -311,7 +335,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/kid-02.png" alt="Classic Dress" />
+                <img src={kidimg2} alt="Classic Dress" />
               </div>
             </div>
             <div className="right-first-image">
@@ -329,7 +353,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/kid-03.png" alt="Spring Collection" />
+                <img src={kidimg3} alt="Spring Collection" />
               </div>
             </div>
             <div className="right-first-image">
@@ -347,7 +371,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <img src="/assets/images/kid-04.jpg" alt="Classic Spring" />
+                <img src={kidimg4} alt="Classic Spring" />
               </div>
             </div>
           </div>
@@ -376,10 +400,10 @@ const Home = () => {
                   <span>Latest Collection</span>
                 </div>
                 <div className="product-item">
-                  <img src="/assets/images/sproduct1.jpg" alt="" />
+                  <img src={sproduct1} alt="" />
                 </div>
                 <div className="product-item">
-                  <img src="/assets/images/sproduct2.jpg" alt="" />
+                  <img src={sproduct2} alt="" />
                 </div>
                 <div className="product-item types">
                   <h4>Different Types</h4>
@@ -406,7 +430,7 @@ const Home = () => {
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
-              <img src="/assets/images/instagram-01.jpg" alt="" />
+              <img src={instagram01} alt="" />
             </div>
             <div className="thumb">
               <div className="icon">
@@ -415,7 +439,7 @@ const Home = () => {
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
-              <img src="/assets/images/instagram-02.jpg" alt="" />
+              <img src={instagram02} alt="" />
             </div>
             <div className="thumb">
               <div className="icon">
@@ -424,7 +448,7 @@ const Home = () => {
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
-              <img src="/assets/images/instagram-03.jpg" alt="" />
+              <img src={instagram03} alt="" />
             </div>
             <div className="thumb">
               <div className="icon">
@@ -433,7 +457,7 @@ const Home = () => {
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
-              <img src="/assets/images/instagram-04.jpg" alt="" />
+              <img src={instagram04} alt="" />
             </div>
             <div className="thumb">
               <div className="icon">
@@ -442,7 +466,7 @@ const Home = () => {
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
-              <img src="/assets/images/instagram-05.jpg" alt="" />
+              <img src={instagram05} alt="" />
             </div>
             <div className="thumb">
               <div className="icon">
@@ -451,7 +475,7 @@ const Home = () => {
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
-              <img src="/assets/images/instagram-06.jpg" alt="" />
+              <img src={instagram06} alt="" />
             </div>
           </div>
         </div>

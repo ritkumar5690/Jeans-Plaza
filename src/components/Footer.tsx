@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 
 const Footer = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Footer = () => {
           {/* Logo and Contact Section */}
           <div className="footer-section footer-logo-section">
             <Link to="/" className="footer-logo">
-              <img src="/assets/images/logo.png" alt="JEANS PLAZA" />
+              <img src={logo} alt="JEANS PLAZA" />
               <span className="footer-logo-text">JEANS <em>PLAZA</em></span>
             </Link>
             <ul className="footer-contact-info">
