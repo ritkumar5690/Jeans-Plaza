@@ -1,17 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 
 const Footer = () => {
-  useEffect(() => {
-    const backToTopBtn = document.getElementById('backToTopBtn');
+  const backToTopBtnRef = useRef<HTMLButtonElement>(null);
 
+  useEffect(() => {
     const toggleBackToTop = () => {
-      if (backToTopBtn) {
+      if (backToTopBtnRef.current) {
         if (window.scrollY > 300) {
-          backToTopBtn.classList.add('show');
+          backToTopBtnRef.current.classList.add('show');
         } else {
-          backToTopBtn.classList.remove('show');
+          backToTopBtnRef.current.classList.remove('show');
         }
       }
     };
@@ -60,9 +60,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-section-title">Shopping & Categories</h4>
             <ul className="footer-nav">
-              <li><a href="#men">Men's Shopping</a></li>
-              <li><a href="#women">Women's Shopping</a></li>
-              <li><a href="#kids">Kid's Shopping</a></li>
+              <li><Link to="/products?category=men">Men's Shopping</Link></li>
+              <li><Link to="/products?category=women">Women's Shopping</Link></li>
+              <li><Link to="/products?category=kids">Kid's Shopping</Link></li>
             </ul>
           </div>
 
@@ -112,6 +112,7 @@ const Footer = () => {
       <button
         className="footer-back-to-top"
         id="backToTopBtn"
+        ref={backToTopBtnRef}
         aria-label="Back to top"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
