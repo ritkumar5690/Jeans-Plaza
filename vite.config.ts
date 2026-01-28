@@ -4,7 +4,8 @@ import * as path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Jeans-Plaza/',
+   base: process.env.VITE_BASE_PATH || "/Jeans-Plaza
+"
   resolve: {
     alias: {
       '@': path.resolve('src'),
